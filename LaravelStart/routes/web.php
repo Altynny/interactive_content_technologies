@@ -1,15 +1,18 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\SubmissionController;
+use App\Http\Controllers\UserController;
+use App\Http\Controllers\ListingController;
+use App\Http\Controllers\ServiceTypeController;
 
 Route::get('/', function () {
     return view('home');
 })->name('home');
 
-Route::get('/form', function () {
-    return view('form');
-})->name('form.show');
-Route::post('/submit', [SubmissionController::class, 'submit'])->name('form.submit');
+Route::resource('users', UserController::class);
 
-Route::get('/submissions', [SubmissionController::class, 'listSubmissions'])->name('submissions.list');
+Route::resource('listings', ListingController::class);
+
+Route::post('listings/{id}/restore', [ListingController::class, 'restore'])->name('listings.restore');
+
+Route::resource('service-types', ServiceTypeController::class);
