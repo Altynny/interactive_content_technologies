@@ -1,7 +1,7 @@
 body { font-family: Arial, Helvetica, sans-serif; margin: 0; padding: 0; background:#f7f7f7; }
 .container { min-height: calc(100vh - 130px); margin: 20px auto; background:#fff; padding:20px; box-shadow:0 0 8px rgba(0,0,0,0.05); }
-input, textarea { box-shadow:0 0 8px rgba(0, 0, 0, 0.25); }
-button { background: gray; }
+input, textarea, select { box-shadow:0 0 8px rgba(0, 0, 0, 0.25); padding: 5px;}
+button { background: gray; padding: 5px;}
 button:hover { color: white; background: green; cursor: pointer}
 header, footer { background:#333; color:#fff; padding: 3px 20px; height: 45px;}
 a { color: #1a73e8; }

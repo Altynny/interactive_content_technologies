@@ -1,6 +1,6 @@
 @extends('layouts.base')
 
-@section('title', 'Форма отправки')
+@section('title', 'Главная страница')
 
 @section('content')
     this is home page!

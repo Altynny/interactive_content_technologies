@@ -5,7 +5,8 @@
     </div>
     <nav>
         <a href="{{ route('home') }}" style="color:#fff; margin-right:12px;">Главная</a>
-        <a href="{{ route('form.show') }}" style="color:#fff; margin-right:12px;">Форма</a>
-        <a href="{{ route('submissions.list') }}" style="color:#fff;">Все записи</a>
+        <a href="{{ route('listings.index') }}" style="color:#fff; margin-right:12px;">Объявления</a>
+        <a href="{{ route('users.index') }}" style="color:#fff; margin-right:12px;">Поставщики услуг</a>
+        <a href="{{ route('service-types.index') }}" style="color:#fff; margin-right:12px;">Типы услуг</a>
     </nav>
 </div>
